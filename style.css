@@ -61,6 +61,8 @@ html{
 }
 
 .headline {
+  display: flex;
+  flex-direction: column;
   font-family: futura;
   font-size: 5vw;
   line-height: 9vw;
@@ -70,10 +72,11 @@ html{
 }
 
 .buttons {
+  margin-top: 20px;
   display: flex;
-  position: absolute;
+  /* position: absolute;
   top: 40vh;
-  margin-left: 2.5vw;
+  margin-left: 2.5vw; */
 }
 
 #button1 {
@@ -197,14 +200,14 @@ html{
 }
 
 .box h3{
-  padding: 10px;
+  padding: 10px 10px;
   padding-top: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
 }
 
 .box p{
-  padding: 10px;
+  padding: 0px 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
 }
@@ -216,6 +219,63 @@ html{
 
 .icon {
   font-size: 45px;
+}
+
+/* work section */
+.work{
+ width: 100vw;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 50px 0px;
+ gap: 8px;
+ background-color: rgb(245, 245, 245);
+}
+
+.work h1{
+  font-family: futura;
+  font-size: 2vw;
+}
+
+.work h2{
+  font-family: futura;
+  text-align: center;
+  font-size: 1.6vw;
+}
+
+.flowchart h3{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5vw;
+}
+
+.flowchart p{
+  font-family:'Open Sans', sans-serif ;
+  font-size: 1vw;
+}
+
+i.fa-arrow-down{
+  display: none;
+}
+
+.flowchart{
+  display: flex;
+  padding-top: 25px;
+}
+
+.flowchart i{
+  font-size: 2.2vw;
+  padding: 0px 25px;
+  
+}
+
+
+#chart1{
+  padding-left: 50px;
+}
+
+#chart4{
+  padding-right: 40px;
 }
 
 /* ABOUT1 */
@@ -492,6 +552,70 @@ SERVICE */
     padding: 20px 15px;
 }
 
+.box h3{
+  font-size: 20px;
+}
+.box p{
+  font-size: 13px;
+}
+
+/* Work section */
+
+.work {
+  /* padding: 45px 10px; */
+  padding: 46px 0px;
+}
+
+.work h1 {
+  /* font-size: 2vw; */
+  font-size: 19px;
+}
+
+
+.work > h2:nth-child(2) {
+  font-size: 15px;
+}
+
+.flowchart{
+  flex-direction: column ;
+  align-items: center;
+  padding: 0px 60px;
+  padding-top: 20px;
+  gap: 8px;
+}
+
+.chart h3{
+text-align: center;
+font-size: 17px;
+}
+.chart p{
+  text-align: center;
+  font-size: 13px;
+}
+
+
+#chart1{
+  padding-left: 0px;
+}
+
+#chart4{
+  padding-right: 0px;
+}
+
+
+i.fa-arrow-right{
+  display: none;
+}
+
+i.fa-arrow-down{
+  display: block;
+}
+
+.flowchart i{
+  font-size: 20px;
+}
+
+
 
 /* ABOUT1 */
 
@@ -609,6 +733,12 @@ div.about2-headline:nth-child(1) {
 .form {
   padding-bottom: 22px;
 }
+
+
+}
+
+
+
 
 
 }
