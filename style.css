@@ -657,6 +657,7 @@ div.about2-headline:nth-child(4) {
 
 .about2-headline-flex {
   flex-direction: column;
+  gap: 10px;
 }
 
 
