@@ -574,6 +574,7 @@ SERVICE */
 
 .work > h2:nth-child(2) {
   font-size: 15px;
+  padding: 0px 20px;
 }
 
 .flowchart{
