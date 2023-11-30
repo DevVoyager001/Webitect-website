@@ -29,9 +29,9 @@ mob_nav.addEventListener('click', open);
 // SERVICE SECTION
 const serviceHeadline = document.querySelector('.service-headline');
 gsap.to(serviceHeadline, {
-  opacity: 1,
+  opacity: 0.8,
   y: 0,
-  duration: 0.5,
+  duration: 0.1,
   scrollTrigger: {
     trigger: serviceHeadline,
     start: 'top 100%', // Adjust the start position as needed
@@ -109,32 +109,47 @@ window.addEventListener('scroll', () => {
 
 // SMOOTH SCROLL method 2
 
- document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
 
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      const navbarHeight = document.querySelector('.navbar').offsetHeight; // Adjust this based on your actual navbar class
+
+      if (targetElement) {
+          window.scrollTo({
+              top: targetElement.offsetTop - navbarHeight,
+              behavior: 'smooth'
+          });
+      }
+  });
+});
 
 
   //  2 BUTTONs IN HEADER SECTION 
-  const service_section = document.querySelector(".service")
-  const button1 = document.querySelector("#button1")
-  button1.addEventListener("click", ()=>{
-    service_section.scrollIntoView({behavior:"smooth"})
-  })
+ const button1 = document.querySelector("#button1")
+ button1.addEventListener("click", (e)=>{
+    e.preventDefault();
+
+    const targetElement = document.querySelector(".service");
+
+    const navbarHeight = document.querySelector('.navbar').offsetHeight; // Adjust this based on your actual navbar class
+
+    if (targetElement) {
+        window.scrollTo({
+            top: targetElement.offsetTop - navbarHeight,
+            behavior: 'smooth'
+        });
+    }
+});
+
 
   const contact_section = document.querySelector(".contact")
   const button2 = document.querySelector("#button2")
   button2.addEventListener("click" , ()=>{
     contact_section.scrollIntoView({behavior:"smooth"})
   })
+
