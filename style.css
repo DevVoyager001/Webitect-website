@@ -212,7 +212,7 @@ html{
   padding-top: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .box p{
@@ -566,10 +566,11 @@ div.sec:nth-child(1) {
 SERVICE */
 .service {
   height: fit-content;
+
 }
 
-
-/* .service-box{
+/* 
+.service-box{
   flex-direction: column;
   align-items: center;
 }
@@ -589,11 +590,15 @@ SERVICE */
 
 .service-headline {
     font-size: 22px;
-    padding: 20px 15px;
+    /* padding: 20px 15px; */
+}
+
+.box{
+  padding: 0px 10px;
 }
 
 .box h3{
-  font-size: 20px;
+  font-size: 18px;
 }
 .box p{
   font-size: 13px;
@@ -779,6 +784,34 @@ div.about2-headline:nth-child(1) {
 
 
 }
+
+
+@media (max-width: 767px) {
+  .service {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .service-content {
+    text-align: center;
+  }
+
+  .service-headline {
+    font-size: 20px;
+    padding: 20px 15px;
+  }
+
+  .service-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
 
 
 
