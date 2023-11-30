@@ -212,7 +212,7 @@ html{
   padding-top: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 .box p{
@@ -498,6 +498,11 @@ div.sec:nth-child(1) {
 
  #buisnessText{
     padding-top: 20px;
+  }
+
+  .headline h1{
+    font-weight: 1000;
+    font-size: 55px;
   }
 
   .buttons {
@@ -811,6 +816,7 @@ div.about2-headline:nth-child(1) {
     margin-bottom: 20px;
   }
 }
+
 
 
 
