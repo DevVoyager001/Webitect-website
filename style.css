@@ -135,16 +135,20 @@ html{
 
   /* Adjust your .service section to use a grid layout */
 .service {
-  width: 100vw;
-  min-height: 120vh; /* Set a minimum height */
+  max-width: 100vw;
+  /* min-height: 120vh; Set a minimum height */
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr; /* Single column */
   grid-template-rows: auto auto; /* Rows for content and background */
   text-align: center;
   z-index: 1;
   position: relative;
-  margin-top: -8px;
+  margin-top: -4px;
   background-color:rgb(228, 225, 225);
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .service-content {
@@ -167,6 +171,7 @@ html{
     transform: translateY(50px); 
     transition: opacity 1s, transform 1s;
     font-size: 2.3vw;
+    padding-bottom: 40px;
   }
   
 
@@ -182,14 +187,17 @@ html{
 .service-box{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-#service-box2{
+/* #service-box2{
     margin-top: 25px;
-}
+    padding-bottom: 50px;
+} */
 
 .box{
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
     border: 2px solid transparent;
     transition: border 0.6s ease;
 }
@@ -204,17 +212,20 @@ html{
   padding-top: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
+  opacity: 80%;
 }
 
 .box p{
   padding: 0px 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  opacity: 70%;
 }
 
 
 .box i {
   padding-top: 50px;
+  opacity: 90%;
 }
 
 .icon {
@@ -236,22 +247,26 @@ html{
 .work h1{
   font-family: futura;
   font-size: 2vw;
+  opacity: 80%;
 }
 
 .work h2{
   font-family: futura;
   text-align: center;
   font-size: 1.6vw;
+  opacity: 80%;
 }
 
 .flowchart h3{
   font-family: "Roboto", sans-serif;
   font-size: 1.5vw;
+  opacity: 80%;
 }
 
 .flowchart p{
   font-family:'Open Sans', sans-serif ;
   font-size: 1vw;
+  opacity: 70%;
 }
 
 i.fa-arrow-down{
@@ -266,6 +281,7 @@ i.fa-arrow-down{
 .flowchart i{
   font-size: 2.2vw;
   padding: 0px 25px;
+  opacity: 70%;
   
 }
 
@@ -289,7 +305,20 @@ i.fa-arrow-down{
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .about1{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journey-headline{
+  position: absolute;
+  top: 40%;
+  font-family: futura;
+  color: rgba(255, 255, 255, 0.852);
+}
+/* .about1{
   position: relative;
 }
 
@@ -300,7 +329,7 @@ i.fa-arrow-down{
   margin-left: 42vw;
   color: white;
   font-family: futura;
-}
+} */
 
 .we-get-it{
   opacity: 0;
@@ -323,6 +352,7 @@ i.fa-arrow-down{
   margin-bottom: 20px;
   font-family: futura;
   font-size: 2vw;
+  opacity: 80%;
 }
 
 .about2-headline-flex{
@@ -336,10 +366,12 @@ i.fa-arrow-down{
 
 .about2-headline p{
   font-family: 'Open Sans', sans-serif;
+  opacity: 70%;
 }
 
 .about2-headline h2{
   font-family: "Roboto", sans-serif;
+  opacity: 80%;
 }
 
 /* CONTACT */
@@ -360,12 +392,14 @@ i.fa-arrow-down{
   padding: 25px 0px;
   font-family: futura;
   font-size: 1.8vw;
+  opacity: 90%;
 }
 
 .contact-info{
   display: flex;
   justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
+  opacity: 90%;
 }
 
 .contact-box{
@@ -397,6 +431,7 @@ div.sec:nth-child(1) {
   gap: 10px;
   align-items: center;
   justify-content: center;
+  opacity: 90%;
 }
 
 .form input{
@@ -461,7 +496,12 @@ div.sec:nth-child(1) {
     overflow-x: hidden;
   }
 
+ #buisnessText{
+    padding-top: 20px;
+  }
+
   .buttons {
+    padding-top: 10px;
     top: 111%;
     flex-direction: column;
   }
@@ -476,7 +516,7 @@ div.sec:nth-child(1) {
   #button2 {
     width: 167px;
     height: 44px;
-    margin-top: 8px;
+    margin-top: 11px;
     margin-left: 0px;
   }
 
@@ -529,7 +569,7 @@ SERVICE */
 }
 
 
-.service-box{
+/* .service-box{
   flex-direction: column;
   align-items: center;
 }
@@ -545,7 +585,7 @@ SERVICE */
 
 #box6{
   margin-top: -12px;
-}
+} */
 
 .service-headline {
     font-size: 22px;
@@ -618,11 +658,12 @@ i.fa-arrow-down{
 
 
 
+
 /* ABOUT1 */
 
-.about1 > div:nth-child(2) > h1:nth-child(1) {
+/* .about1 > div:nth-child(2) > h1:nth-child(1) {
   margin-left: 66px;
-}
+} */
 
 /* ABOUT2 */
 
@@ -739,10 +780,5 @@ div.about2-headline:nth-child(1) {
 
 }
 
-
-
-
-
-}
 
 
