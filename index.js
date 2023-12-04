@@ -153,3 +153,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     contact_section.scrollIntoView({behavior:"smooth"})
   })
 
+
+// PRELOADER
+let preload = document.querySelector(".loader")
+window.addEventListener("load" , closeloading)
+
+// function closeloading() {
+//   gsap.to(".loader", {
+//     display: 'none',
+//     duration : 1,
+//     ease : power4
+//   });
+// }
+
+function closeloading() {
+  gsap.to(".loader", {
+    opacity: 0,
+    duration: 1,
+    ease: "power4.out",
+    onComplete: () => {
+      preload.style.display = 'none'; // Set display to none after the animation is complete
+    }
+  });
+}
